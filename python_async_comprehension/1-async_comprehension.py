@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Comprehension with async """
+""" Collects 10 random numbers using async comprehension """
 
 from typing import List
 import asyncio

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" asyncio.gather """
+""" Measure the runtime of an async comprehension function """
 
 import asyncio
 import random
