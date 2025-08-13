@@ -2,13 +2,9 @@
 import csv
 import math
 from typing import List
-"""Function that return a tuple of size two
-containing a start index and an end index
-"""
 
 
 def index_range(page: int, page_size: int):
-
     start_idx = (page - 1) * page_size
     end_idx = start_idx + page_size
 
@@ -35,9 +31,13 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        """Get a page of dataset"""
-        assert isinstance(page, int) and page > 0
-        assert isinstance(page_size, int) and page_size > 0
+        """Function that return a tuple of size two
+            containing a start index and an end index
+        """
+        assert isinstance(page, int)
+        assert page > 0
+        assert isinstance(page_size, int)
+        assert page_size > 0
 
         start, end = index_range(page, page_size)
         data = self.dataset()
