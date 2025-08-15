@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+// List all databases in MangoDB
+
+show dbs
