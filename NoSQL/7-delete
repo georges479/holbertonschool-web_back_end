@@ -1,0 +1,4 @@
+// Scrpit that detelete a documents
+db.school.deleteMany(
+	{ name:"Holberton school" }
+)
