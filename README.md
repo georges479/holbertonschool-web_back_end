@@ -50,3 +50,35 @@ But sometimes:
 
 	* Slack (redirect via slack://user?... links)
 
+## Project architecture
+
+holberton-help/
+│
+├─ frontend/ 		# React App
+│ ├─ src/
+│ │ ├─ components/ 	# Modular UI
+│ │ ├─ pages/ 		# Form, Dashboard
+│ │ ├─ services/ 	# API calls to backend
+│ │ └─ App.jsx
+│
+├─ backend/ 		#Express API
+│ ├─ routes/ 		# endpoints REST
+│ ├─ models/ 		# ORM/DB
+│ ├─ controllers/ 	# business logic
+│ └─ app.js
+│
+├─ database/ 		# SQLite or Firebase config
+├─ README.md
+└─ .gitignore
+
+## Data Schema
+
+**Table** users
+| field | type | description |
+| ------------ | ---- | ------------------ |
+| id | INT | unique identifier |
+| name | TEXT | student name |
+| slack\_id | TEXT | Slack identifier |
+| validated | JSON | validated projects |
+| badges | INT | number of badges |
+| jolt\_points | INT | points accumulated |
