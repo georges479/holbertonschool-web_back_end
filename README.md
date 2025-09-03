@@ -73,7 +73,7 @@ holberton-help/
 ```
 ## Data Schema
 
-**Table** users
+**Table** users:
 | field | type | description |
 | ------------ | ---- | ------------------ |
 | id | INT | unique identifier |
@@ -82,3 +82,81 @@ holberton-help/
 | validated | JSON | validated projects |
 | badges | INT | number of badges |
 | jolt\_points | INT | points accumulated |
+
+**Table** problems:
+| field | type | description |
+| ----------- | ---- | ---------------------- |
+| id | INT | problem identifier |
+| user\_id | INT | blocked student (FK) |
+| project | TEXT | project name |
+| description | TEXT | block description |
+| status | TEXT | open, resolved |
+
+**Table** badges:
+| field | type | description |
+| ----------- | ---- | ------------------------ |
+| id | INT | badge identifier |
+| helper\_id | INT | student who helped (FK) |
+| problem\_id | INT | related problem (FK) |
+| points | INT | Jolt point value |
+
+## API REST (Backend)
+
+* POST /problems → problem creation
+Input: { user\_id, project, description }
+Output: { problem\_id, status: "open" }
+
+* GET /helpers/:project → list helpers for a project
+Output: [ { user\_id, name, slack\_id } ]
+
+* POST /badges → badge and points allocation
+Input: {helper\_id, problem\_id}
+Output: { badge\_id, points\_awarded }
+
+* GET /leaderboard → ranking helpers
+Output: [ { name, badges, jolt\_points } ]
+
+## Workflow example
+
+	1.Student A is stuck on "Simple Shell".
+
+	2.He fills out the form → problem logged in the database.
+
+	3.API /helpers/Simple Shell → suggests students B & C.
+
+	4.Student A clicks "Contact via Slack" → Slack opens.
+
+	5.Once helped, he validates → Student B receives +1 badge and +5 Jolt points.
+
+	6.Dashboard updated automatically.
+
+## Rapid deployment
+
+* Backend: Heroku or Render
+
+* Frontend: Vercel or Netlify
+
+* Database: SQLite (local) or Firebase (cloud ready)
+
+## Limits & developments
+
+* Hackathon: Simple matching + Jolt points simulation.
+
+* Final version:
+
+* Authentication via Slack OAuth.
+
+* Real connection to the Jolt API.
+
+* Advanced matching (availability, help history, response time).
+
+## Authors
+
+- Wilfried Panol Guele Tchomeugne
+
+- Lentz Gonzalez
+
+- Georges Menheim
+
+**Github Link**
+[Github]()
