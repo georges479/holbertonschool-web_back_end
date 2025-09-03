@@ -103,20 +103,30 @@ holberton-help/
 ## API REST (Backend)
 
 * POST /problems → problem creation
-Input: { user\_id, project, description }
+Input:
 ```json
-Output: { problem\_id, status: "open" }
+{ user\_id, project, description }
+Output:
+```json
+{ problem\_id, status: "open" }
 
 * GET /helpers/:project → list helpers for a project
-Output: [ { user\_id, name, slack\_id } ]
+Output:
+```json
+[ { user\_id, name, slack\_id } ]
 
 * POST /badges → badge and points allocation
-Input: {helper\_id, problem\_id}
-Output: { badge\_id, points\_awarded }
+Input:
+```json
+{helper\_id, problem\_id}
+Output:
+```json
+{ badge\_id, points\_awarded }
 
 * GET /leaderboard → ranking helpers
-Output: [ { name, badges, jolt\_points } ]
+Output:
 ```json
+[ { name, badges, jolt\_points } ]
 
 ## Workflow example
 
