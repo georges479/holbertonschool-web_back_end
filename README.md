@@ -104,27 +104,27 @@ holberton-help/
 
 * POST /problems → problem creation
 Input:
-```json
+```js
 { user\_id, project, description }
 ```
 Output:
-```json
+```js
 { problem\_id, status: "open" }
 ```
 
 * GET /helpers/:project → list helpers for a project
 Output:
-```json
+```js
 [ { user\_id, name, slack\_id } ]
 ```
 
 * POST /badges → badge and points allocation
 Input:
-```json
+```js
 {helper\_id, problem\_id}
 ```
 Output:
-```json
+```js
 { badge\_id, points\_awarded }
 ```
 
