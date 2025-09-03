@@ -14,7 +14,7 @@ But sometimes:
 
 **The result:** frustration, discouragement, wasted time -> less well-being and efficiency.
 
-## Proposed solution
+## 🚀 Proposed solution
 
 **PeerBoost:** a digital mutual aid tool that allows you to:
 
@@ -26,7 +26,7 @@ But sometimes:
 
 	4.Validate the help received → the helper earns a badge and Jolt points.
 
-## Key Features
+## 🔑 Key Features
 
 * "I'm stuck" form (project + description).
 
@@ -38,7 +38,7 @@ But sometimes:
 
 * Dashboard with leaderboard of the best helpers.
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 * Frontend: React + TailwindCSS
 
@@ -50,7 +50,7 @@ But sometimes:
 
 	* Slack (redirect via slack://user?... links)
 
-## Project architecture
+## 📂 Project architecture
 ```
 holberton-help/
 │
@@ -71,7 +71,7 @@ holberton-help/
 ├─ README.md
 └─ .gitignore
 ```
-## Data Schema
+## 🗄️ Data Schema
 
 **Table** users:
 | field | type | description |
@@ -100,7 +100,7 @@ holberton-help/
 | problem\_id | INT | related problem (FK) |
 | points | INT | Jolt point value |
 
-## API REST (Backend)
+## 🔗 API REST (Backend)
 
 * POST /problems → problem creation
 Input:
@@ -134,7 +134,7 @@ Output:
 [{"name": "Lentz", "badges": 3, "jolt_points": 15}]
 ```
 
-## Workflow example
+## 🔄 Workflow example
 
 	1.Student A is stuck on "Simple Shell".
 
@@ -148,7 +148,7 @@ Output:
 
 	6.Dashboard updated automatically.
 
-## Rapid deployment
+## 🌐 Rapid deployment
 
 * Backend: Heroku or Render
 
@@ -156,7 +156,7 @@ Output:
 
 * Database: SQLite (local) or Firebase (cloud ready)
 
-## Limits & developments
+## 🚧 Limits & developments
 
 * Hackathon: Simple matching + Jolt points simulation.
 
@@ -168,7 +168,7 @@ Output:
 
 * Advanced matching (availability, help history, response time).
 
-## Authors
+## 👥 Authors
 
 - Wilfried Panol Guele Tchomeugne
 
@@ -176,4 +176,4 @@ Output:
 
 - Georges Menheim
 
-**Github Link**: [Github]()
+**Github Link**: [PeerBoost Repository]()
