@@ -131,7 +131,7 @@ Output:
 * GET /leaderboard → ranking helpers
 Output:
 ```json
-[ { "name", "badges", "jolt_points" } ]
+[{"name", "badges", "jolt_points"}]
 ```
 
 ## Workflow example
