@@ -125,7 +125,7 @@ Input:
 ```
 Output:
 ```json
-{"badge_id, points_awarded"}
+{"badge_id", "points_awarded"}
 ```
 
 * GET /leaderboard → ranking helpers
