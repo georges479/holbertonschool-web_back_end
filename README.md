@@ -12,4 +12,4 @@ But sometimes:
 * Too much time is wasted looking for people to help.
 * Helpers aren't valued for their investment.
 
-**The result:**frustration, discouragement, wasted time -> less well-being and efficiency.
+**The result:** frustration, discouragement, wasted time -> less well-being and efficiency.
