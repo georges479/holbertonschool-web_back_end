@@ -104,6 +104,7 @@ holberton-help/
 
 * POST /problems → problem creation
 Input: { user\_id, project, description }
+```json
 Output: { problem\_id, status: "open" }
 
 * GET /helpers/:project → list helpers for a project
@@ -115,6 +116,7 @@ Output: { badge\_id, points\_awarded }
 
 * GET /leaderboard → ranking helpers
 Output: [ { name, badges, jolt\_points } ]
+```json
 
 ## Workflow example
 
