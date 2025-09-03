@@ -13,4 +13,5 @@ But sometimes:
 * Helpers aren't valued for their investment.
 
 The result:
+
 frustration, discouragement, wasted time -> less well-being and efficiency.
