@@ -105,33 +105,33 @@ holberton-help/
 * POST /problems → problem creation
 Input:
 ```json
-{"user_id", "project", "description"}
+{"user_id": 1, "project": "Simple Shell", "description": "Segfault on exec"}
 ```
 Output:
 ```json
-{"problem_id", "status": "open"}
+{"problem_id": 42, "status": "open"}
 ```
 
 * GET /helpers/:project → list helpers for a project
 Output:
 ```json
-[{"user_id", "name, slack_id"}]
+[{"user_id": 2, "name": "Wilfried", "slack_id": 22}]
 ```
 
 * POST /badges → badge and points allocation
 Input:
 ```json
-{"helper_id", "problem_id"}
+{"helper_id": 3, "problem_id": 33}
 ```
 Output:
 ```json
-{"badge_id", "points_awarded"}
+{"badge_id": 4, "points_awarded": 7}
 ```
 
 * GET /leaderboard → ranking helpers
 Output:
 ```json
-[{"name", "badges", "jolt_points"}]
+[{"name": "Lentz", "badges": 3, "jolt_points": 15}]
 ```
 
 ## Workflow example
