@@ -1,4 +1,6 @@
 # PeerBoost
-![Logo PeerBoost](PeerBoost.png)
+<p align="center">
+<img src="PeerBoost.png" alt="Logo PeerBoost" width="100"/>
+</p>
 
 
