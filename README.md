@@ -158,5 +158,4 @@ Output: [ { name, badges, jolt\_points } ]
 
 - Georges Menheim
 
-**Github Link**
-[Github]()
+**Github Link**: [Github]()
