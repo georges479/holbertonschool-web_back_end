@@ -51,7 +51,7 @@ But sometimes:
 	* Slack (redirect via slack://user?... links)
 
 ## Project architecture
-
+```
 holberton-help/
 │
 ├─ frontend/ 		# React App
@@ -70,7 +70,7 @@ holberton-help/
 ├─ database/ 		# SQLite or Firebase config
 ├─ README.md
 └─ .gitignore
-
+```
 ## Data Schema
 
 **Table** users
