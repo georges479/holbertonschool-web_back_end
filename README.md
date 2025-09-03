@@ -13,3 +13,27 @@ But sometimes:
 * Helpers aren't valued for their investment.
 
 **The result:** frustration, discouragement, wasted time -> less well-being and efficiency.
+
+## Proposed solution
+
+**PeerBoost:** a digital mutual aid tool that allows you to:
+
+	1.Select your project and post a problem.
+
+	2.Automatically obtain a list of peers who have already validated this project.
+
+	3.Contact the helper directly via Holberton Slack.
+
+	4.Validate the help received → the helper earns a badge and Jolt points.
+
+## Key Features
+
+* "I'm stuck" form (project + description).
+
+* Simple matching algorithm (validated project database).
+
+* "Contact via Slack" button.
+
+* Awarding of badges and Jolt points (API simulation).
+
+* Dashboard with leaderboard of the best helpers.
