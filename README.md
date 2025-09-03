@@ -9,8 +9,8 @@ Its goal is simple: reduce time wasted when stuck on a project, facilitate conne
 At Holberton, learning is project-based.
 But sometimes:
 
-    *Too much time is wasted looking for people to help.
-    *Helpers aren't valued for their investment.
+* Too much time is wasted looking for people to help.
+* Helpers aren't valued for their investment.
 
 The result:
 frustration, discouragement, wasted time -> less well-being and efficiency.
