@@ -5,7 +5,7 @@
 PeerBoost is a smart support platform designed for Holberton students.
 Its goal is simple: reduce time wasted when stuck on a project, facilitate connections with classmates who have already completed the project, and reward helpers through a badge and points system (connected to Jolt).
 
-## Problem
+## Problems
 At Holberton, learning is project-based.
 But sometimes:
 
@@ -37,3 +37,16 @@ But sometimes:
 * Awarding of badges and Jolt points (API simulation).
 
 * Dashboard with leaderboard of the best helpers.
+
+## Technology Stack
+
+* Frontend: React + TailwindCSS
+
+* Backend: Node.js + Express
+
+* Database: SQLite (or Firebase for real-time sync)
+
+* External Integrations:
+
+	* Slack (redirect via slack://user?... links)
+
