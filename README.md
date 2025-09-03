@@ -1,4 +1,4 @@
 # PeerBoost
-![Logo PeerBoost]("PeerBoost.png")
+![Logo PeerBoost](PeerBoost.png)
 
 
