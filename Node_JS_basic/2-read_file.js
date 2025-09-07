@@ -1,6 +1,5 @@
 function countStudents(filePath) {
 	const fs = require('fs');
-	const path = require('path');
 	let content;
 
 	try {
