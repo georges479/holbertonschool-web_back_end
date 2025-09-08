@@ -26,7 +26,7 @@ function countStudents(filePath) {
     }
     studentsByField[field].push(firstName); // Add the first name to the corresponding field array.
   }
-  for (const field in studentsByField) { // Iterate over each field in the object.
+  for (const field of Object.keys(studentsByField)) { // Iterate over each field in the object.
     console.log(`Number of students in ${field}: ${studentsByField[field].length}. List: ${studentsByField[field].join(', ')}`);
   }
 }
