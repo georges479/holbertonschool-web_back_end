@@ -1,5 +1,7 @@
+const fs = require('fs');
+
+
 function countStudents(filePath) {
-	const fs = require('fs');
 	let content;
 
 	try {
@@ -9,7 +11,7 @@ function countStudents(filePath) {
 	}
 
 	const lines = content.split('\n'); // Slice in lines the string of content.
-	const cleanLines = lines.filter(lines => lines.trim() !== ''); // Delete de emptys lines of end of file.
+	const cleanLines = lines.filter((lines) => lines.trim() !== ''); // Delete de emptys lines of end of file.
 	const students = cleanLines.slice(1); // Delete the header line.
 	console.log(`Number of students: ${students.length}`);
 
@@ -29,4 +31,5 @@ function countStudents(filePath) {
 		console.log(`Number of students in ${field}: ${studentsByField[field].length}. List: ${studentsByField[field].join(', ')}`);
 	}
 }
+
 module.exports = countStudents;
