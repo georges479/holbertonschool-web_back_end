@@ -1,10 +1,11 @@
 const fs = require('fs').promises;
 
 function countStudents(filePath) {
+
   return fs.readFile(filePath, "utf-8")
   .then((content) => {
     const lines = content.split('\n');
-    const cleanLines = lines.filter((line) => lines.trim() !== '');
+    const cleanLines = lines.filter((line) => line.trim() !== '');
     const students = cleanLines.slice(1);
     console.log(`Number of students: ${students.length}`);
 
