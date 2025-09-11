@@ -11,7 +11,7 @@ const app = http.createServer((req, res) => {
 
     fs.promises.readFile(dbFile, 'utf-8')
       .then((content) => {
-        const lines = content.split('\n').filter(line => line.trim() !== '');
+        const lines = content.split('\n').filter((line) => line.trim() !== '');
         const students = lines.slice(1);
         let output = `Number of students: ${students.length}\n`;
 
@@ -28,7 +28,7 @@ const app = http.createServer((req, res) => {
           output += `Number of students in ${field}: ${studentsByField[field].length}. List: ${studentsByField[field].join(', ')}\n`;
         }
 
-        res.end('This is the list of our students\n' + output.trim());
+        res.end(`This is the list of our students\n${output.trim()}`);
       })
       .catch(() => {
         res.end('This is the list of our students\nCannot load the database');
