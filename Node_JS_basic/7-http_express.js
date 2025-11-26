@@ -1,8 +1,8 @@
 const express = require('express');
-const dataFilePath = process.argv[2];
-const countStudents = require('./3-read_file_async.js');
+const countStudents = require('./3-read_file_async');
 
 const app = express();
+const database = process.argv[2];
 
 app.get('/', (req, res) => {
   res.setHeader('Content-Type', 'text/plain');
@@ -12,17 +12,15 @@ app.get('/', (req, res) => {
 app.get('/students', (req, res) => {
   res.setHeader('Content-Type', 'text/plain');
 
-  countStudents(dataFilePath)
-    .then((msg) => {
-      res.send(`This is the list of our students\n${msg}`);
+  countStudents(database)
+    .then((output) => {
+      res.send(`This is the list of our students\n${output}`);
     })
     .catch(() => {
       res.send('This is the list of our students\nCannot load the database');
     });
 });
 
-app.listen(1245, () => {
-  console.log('Server is listening on http://localhost:1245');
-});
+app.listen(1245);
 
 module.exports = app;
